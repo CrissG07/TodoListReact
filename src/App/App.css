@@ -1,0 +1,238 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+}
+
+
+
+/* Loading Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #5c5b5b 25%, #848484 50%, #3d3d3d 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 5px;
+  list-style: none;
+}
+
+/* Animación de movimiento */
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Skeleton para el ícono */
+.skeleton-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Skeleton para el texto */
+.skeleton-text {
+  flex-grow: 1;
+  height: 16px;
+  margin-right: 10px;
+}
+
+/* Skeleton para el botón de eliminar */
+.skeleton-delete {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  color: #00bfff;
+
+}
+
+.description{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.description span{
+  font-weight: bold;
+}
+
+/* From Uiverse.io by shadowmurphy */ 
+.input {
+  position: relative;
+  border: 2px solid transparent;
+  width: 28em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.bx-search-alt-2{
+  position: relative;
+  right: 35px;
+  top: 8px;
+  color: #111111;
+  font-size: 30px;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+  color: #111111;
+}
+
+.card{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 550px;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.item{
+  position: relative;
+  display: flex;
+  right: calc(20% - 85px);
+  margin: 15px auto;
+  justify-content: center;
+  background-color: #333;
+  list-style: none;
+  color: #fff;
+  width: 100%;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+li span .bx-check{
+  position: absolute;
+  top: 8px;
+  left: calc(20% - 90px);
+  font-size: 40px;
+}
+li span .bx-check:hover{
+  cursor: pointer;
+}
+
+.active{
+  color: #14c53b;
+
+}
+
+li span .bx-x{
+  position: absolute;
+  top: 8px;
+  left: calc(90% - 5px);
+  font-size: 40px;
+}
+
+li span .bx-x:hover{
+  cursor: pointer;
+  color: red;
+}
+
+button {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  left: calc(70%);
+  bottom: 30px;
+  border: 2px solid #0a76ac;
+  background-color: #24b4fb;
+  border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button i{
+font-size: 30px;
+}
+
+.form {
+  position: relative;
+  right: calc(50% - 100px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  max-width: 400px;
+  margin-left: 130px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+
+.title-form {
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #00bfff;
+}
+
+
+.textarea-form {
+  background-color: #333;
+  color: #fff;
+  width: 94%;
+padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  resize: none;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+  cursor: pointer;
+}
