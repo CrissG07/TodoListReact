@@ -27,8 +27,7 @@ function TodoForm(){
             value={newTodoValue} 
             onChange={onChange}/>
 
-            <input className='submit' type="submit" value="
-            Añadir" />
+            <input className='submit' type="submit" value="Añadir" />
           </form>
     );
 }
