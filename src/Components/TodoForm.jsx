@@ -19,7 +19,11 @@ function TodoForm(){
         setNewTodoValue(event.target.value)
     };
 
+    const onClose = () => setOpenModal(false);
+
     return(
+        <>
+        <div className="modal-backdrop" onClick={onClose}></div>
         <form className='form' onSubmit={onSubmit}>
             <h2 className='title-form'>Añadir tareas</h2>
             <textarea className='textarea-form' 
@@ -29,6 +33,7 @@ function TodoForm(){
 
             <input className='submit' type="submit" value="Añadir" />
           </form>
+          </>
     );
 }
 

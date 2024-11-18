@@ -274,6 +274,30 @@ padding: 10px;
 
 /* Estilos para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
+  .form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 20px;
+    z-index: 1000; /* Para que se muestre encima */
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    z-index: 999; /* Debajo del modal */
+  }
+
   .title {
     font-size: 24px;
   }
@@ -283,25 +307,29 @@ padding: 10px;
   }
 
   .card {
-    width: 95%;
+    width: 80%;
     margin: 10px auto;
-    padding: 15px;
+    padding: 10px;
   }
 
-  .form {
-    width: 95%;
-    padding: 15px;
-  }
 
   .input {
-    width: 100%;
+    width: 85%;
     height: 2.2em;
+  }
+
+  .bx-search-alt-2{
+    position: relative;
+    right: calc(-38%);
+    top: -32px;
+    color: #111111;
+    font-size: 30px;
   }
 
   button {
     left: calc(50% - 28px);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -312,6 +340,10 @@ padding: 10px;
   animation: shimmer 1.5s infinite;
   border-radius: 5px;
   list-style: none;
+}
+.item{
+  position: relative;
+  right: 20px;
 }
 
 /* Animación */
@@ -360,15 +392,15 @@ padding: 10px;
 
 /* Botón flotante */
 button {
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   position: fixed;
-  left: calc(70%);
+  left: calc(82%);
   bottom: 30px;
   border: 2px solid #0a76ac;
   background-color: #24b4fb;
   border-radius: 50px;
-  padding: 15px;
+  padding: 5px;
   cursor: pointer;
   font-size: 16px;
 }
